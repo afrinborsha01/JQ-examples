@@ -1,0 +1,249 @@
+//ex1
+$(document).ready(function(){
+	$("#b_a").click(function(){
+		alert("hello");
+	});
+});
+//2
+$(document).ready(function(){
+    $("#btn2").click(function(){
+        $("#demo2").html("<b>BORSHA</b>");
+    });
+});
+//3
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#text3").hide();
+    });
+});
+//4
+$(document).ready(function(){
+    $("#btn4").click(function(){
+        $("#text4").show();
+    });
+});
+//5
+$(document).ready(function(){
+    $("#btn5").click(function(){
+        $("#text5").toggle();
+    });
+});
+//6
+$(document).ready(function(){
+    $("#btn6").click(function(){
+        $("#title6").css("color", "red");
+    });
+});
+//7
+$(document).ready(function(){
+    $("#btn7").click(function(){
+        $("#title7").css({
+            "color":"blue",
+            "background-color":"yellow",
+            "padding":"20px"
+        });
+    });
+});
+//8
+$(document).ready(function(){
+    $("#btn8").click(function(){
+        $("#text8").addClass("active");
+    });
+});
+//9
+$(document).ready(function(){
+    $("#btn9").click(function(){
+        $("#text9").removeClass("active");
+    });
+});
+//10
+$(document).ready(function(){
+    $("#btn10").click(function(){
+        $("#text10").toggleClass("active");
+    });
+});
+//11
+$(document).ready(function(){
+    $("#btn11").click(function(){
+        let name = $("#name11").val();
+        $("#result11").text(name);
+    });
+});
+//12
+$(document).ready(function(){
+    $("#btn12").click(function(){
+        $("#name12").val("Borsha");
+    });
+});
+//13
+$(document).ready(function(){
+    $("#btn13").click(function(){
+        $("#list13").append("<li>Banana</li>");
+    });
+});
+//14
+$(document).ready(function(){
+    $("#btn14").click(function(){
+        $("#list14").prepend("<li>First</li>");
+    });
+});
+//15
+$(document).ready(function(){
+    $("#btn15").click(function(){
+        $("#text15").remove();
+    });
+});
+//16
+$(document).ready(function(){
+    $("#btn16").click(function(){
+        $("#box16").empty();
+    });
+});
+//17
+$(document).ready(function(){
+    $("#btn17").click(function(){
+        $("#box17").fadeIn();
+    });
+});
+//18
+$(document).ready(function(){
+    $("#btn18").click(function(){
+        $("#box18").fadeOut();
+    });
+});
+//19
+$(document).ready(function(){
+    $("#btn19").click(function(){
+        $("#box19").fadeToggle();
+    });
+});
+//20
+$(document).ready(function(){
+    $("#btn20").click(function(){
+        $("#box20").slideUp();
+    });
+});
+//21
+$(document).ready(function(){
+    $("#btn21").click(function(){
+        $("#box21").slideDown();
+    });
+});
+//22
+$(document).ready(function(){
+    $("#btn22").click(function(){
+        $("#box22").slideToggle();
+    });
+});
+//23
+$(document).ready(function(){
+    $("#btn23").click(function(){
+        alert("Button clicked!");
+    });
+});
+//24
+$(document).ready(function(){
+    $("#text24").dblclick(function(){
+        alert("Double clicked!");
+    });
+});
+//25
+$(document).ready(function(){
+    $("#box25").mouseenter(function(){
+        $(this).css("background","yellow");
+    });
+});
+//26
+$(document).ready(function(){
+    $("#box26").mouseleave(function(){
+        $(this).css("background","gray");
+    });
+});
+//27
+$(document).ready(function(){
+    $("#name27").focus(function(){
+        $(this).css("background","yellow");
+    });
+});
+//28
+$(document).ready(function(){
+    $("#name28").blur(function(){
+        $(this).css("background","white");
+    });
+});
+//29
+$(document).ready(function(){
+    $("#name29").keyup(function(){
+        $("#result29").text($(this).val());
+    });
+});
+//30
+$(document).ready(function(){
+    $("#city30").change(function(){
+        $("#result30").text(
+            "You selected " + $(this).val()
+        );
+    });
+});
+//31
+$(document).ready(function(){
+    $("#btn31").click(function(){
+        alert($("#link31").attr("href"));
+    });
+});
+//32
+$(document).ready(function(){
+    $("#btn32").click(function(){
+        $("#image32").attr("src","images/bulb2 copy.gif");
+    });
+});
+//33
+$(document).ready(function(){
+    $("#btn33").click(function(){
+        alert($(".para33").length);
+    });
+});
+//34
+$(document).ready(function(){
+    $("#btn34").click(function(){
+        $(".para34").css("color","red");
+    });
+});
+//35
+$(document).ready(function(){
+    $("#btn35").click(function(){
+        $(".para35").first().css("color","red");
+    });
+});
+//36
+$(document).ready(function(){
+    $("#btn36").click(function(){
+        $(".para36").last().css("color","blue");
+    });
+});
+//37
+$(document).ready(function(){
+    $("#btn37").click(function(){
+        $("#list37 li").each(function(){
+            alert($(this).text());
+        });
+    });
+});
+//38
+$(document).ready(function(){
+    $("#btn38").click(function(){
+        $("#text38").before("<b>Hello </b>");
+    });
+});
+//39
+$(document).ready(function(){
+    $("#btn39").click(function(){
+        $("#text39").after("<b> World!</b>");
+    });
+});
+//40
+$(document).ready(function(){
+    $("#btn40").click(function(){
+        $(this).prop("disabled",true);
+    });
+});
